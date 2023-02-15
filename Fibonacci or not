@@ -1,0 +1,28 @@
+import java.util.*;
+class Fibo
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=0,b=1,c,n,d=0;
+        n=sc.nextInt();
+        while(a+b<=n)
+        {
+            c=a+b;
+            if(c==n)
+            {
+                d++;
+            }
+            a=b;
+            b=c;
+        }
+        if(d==1)
+        {
+            System.out.println("True");
+        }
+        else
+        {
+            System.out.println("False");
+        }
+    }
+}
