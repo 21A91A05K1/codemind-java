@@ -1,0 +1,25 @@
+import java.util.*;
+class Neon
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,t,s=0,d;
+        n=sc.nextInt();
+        t=n*n;
+        while(t>0)
+        {
+           d=t%10;
+           s+=d;
+           t=t/10;
+        }
+        if(s==n)
+        {
+            System.out.println("Neon Number");
+        }
+        else
+        {
+            System.out.println("Not Neon Number");
+        }
+    }
+}
