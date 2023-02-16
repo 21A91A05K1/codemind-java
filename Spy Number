@@ -1,0 +1,25 @@
+import java.util.*;
+class Inte
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,p=1,s=0,d;
+        n=sc.nextInt();
+        while(n>0)
+        {
+            d=n%10;
+            p*=d;
+            s+=d;
+            n=n/10;
+        }
+        if(p==s)
+        {
+            System.out.println("Spy Number");
+        }
+        else
+        {
+            System.out.println("Not Spy Number");
+        }
+    }
+}
