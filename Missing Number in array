@@ -1,0 +1,26 @@
+import java.util.*;
+class Miss
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int t;
+        t=sc.nextInt();
+        for(int j=0;j<t;j++)
+        {
+            int a[],n,i,s=0,av=0;
+            n=sc.nextInt();
+            av=(n*(n+1))/2;
+            a=new int[n];
+            for(i=0;i<n-1;i++)
+            {
+                a[i]=sc.nextInt();
+            }
+            for(i=0;i<n-1;i++)
+            {
+                s+=a[i];
+            }
+            System.out.println(av-s);
+        }
+    }
+}
